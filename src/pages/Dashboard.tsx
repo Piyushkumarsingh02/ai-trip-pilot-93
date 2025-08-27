@@ -157,7 +157,7 @@ const Dashboard = () => {
                   <div className="flex items-start justify-between">
                     <CardTitle className="text-lg">{trip.title}</CardTitle>
                     <Badge className={getStatusColor(trip.status)}>
-                      {trip.status}
+                      {trip.status.charAt(0).toUpperCase() + trip.status.slice(1)}
                     </Badge>
                   </div>
                   <CardDescription className="flex items-center gap-1">
